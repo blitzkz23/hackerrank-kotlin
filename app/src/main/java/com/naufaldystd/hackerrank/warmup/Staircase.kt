@@ -1,6 +1,7 @@
-﻿package com.naufaldystd.hackerrank_warmup
+﻿package com.naufaldystd.hackerrank.warmup
 
 object Staircase {
+
 	fun main(args: Array<String>) {
 		val n = readLine()!!.trim().toInt()
 

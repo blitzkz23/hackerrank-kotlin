@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.naufaldystd.hackerrank_warmup"
+        applicationId "com.naufaldystd.hackerrank"
         minSdk 21
         targetSdk 31
         versionCode 1

@@ -2,8 +2,7 @@ package com.naufaldystd.hackerrank_warmup
 
 import com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut
 import com.google.common.truth.Truth.assertThat
-import com.naufaldystd.hackerrank_warmup.Staircase.staircase
-import org.junit.Assert.assertEquals
+import com.naufaldystd.hackerrank.warmup.Staircase.staircase
 import org.junit.Test
 
 internal class StaircaseTest {

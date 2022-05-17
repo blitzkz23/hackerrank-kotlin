@@ -1,4 +1,4 @@
-package com.naufaldystd.hackerrank_warmup
+package com.naufaldystd.hackerrank
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

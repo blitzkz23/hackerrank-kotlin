@@ -1,4 +1,4 @@
-package com.naufaldystd.hackerrank_warmup
+package com.naufaldystd.hackerrank.warmup
 
 object SolveMeFirst {
 
