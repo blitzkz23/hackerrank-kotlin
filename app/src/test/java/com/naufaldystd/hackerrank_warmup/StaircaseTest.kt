@@ -20,6 +20,6 @@ internal class StaircaseTest {
 			staircase(4)
 		}
 
-		assertEquals(expectedResult, output.trimIndent())
+		assertThat(output.trimIndent()).isEqualTo(expectedResult)
 	}
 }
