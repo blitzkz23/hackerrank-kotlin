@@ -3,10 +3,9 @@ package com.naufaldystd.hackerrank.warmup
 import com.google.common.truth.Truth.assertThat
 import com.naufaldystd.hackerrank.warmup.BirthdayCakeCandles.birthdayCakeCandles
 import org.junit.Test
-import org.junit.jupiter.api.Assertions.*
 
 internal class BirthdayCakeCandlesTest {
-	val expectedResult = 2
+	private val expectedResult = 2
 
 	@Test
 	fun `return true if result is equal to expected result`() {
