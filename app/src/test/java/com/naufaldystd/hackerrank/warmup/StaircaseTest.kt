@@ -1,4 +1,4 @@
-package com.naufaldystd.hackerrank_warmup
+package com.naufaldystd.hackerrank.warmup
 
 import com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut
 import com.google.common.truth.Truth.assertThat

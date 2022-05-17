@@ -1,16 +1,16 @@
 package com.naufaldystd.hackerrank.warmup
 
 import com.google.common.truth.Truth.assertThat
-import com.naufaldystd.hackerrank.warmup.SimpleArraySum.simpleArraySum
+import com.naufaldystd.hackerrank.warmup.CompareTriplets.compareTriplets
 import org.junit.Test
 
+internal class CompareTripletsTest {
 
-internal class SimpleArraySumTest {
-	val expectedResult = 31
+	val expectedResult = arrayOf(2, 1)
 
 	@Test
 	fun `return true if result is equal to expected result`() {
-		val result = simpleArraySum(arrayOf(1, 2, 3, 4, 10, 11))
+		val result = compareTriplets(arrayOf(17, 28, 30), arrayOf(99, 16, 8))
 
 		assertThat(result).isEqualTo(expectedResult)
 	}
