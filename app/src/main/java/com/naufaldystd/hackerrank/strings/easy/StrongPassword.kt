@@ -8,12 +8,12 @@ object StrongPassword {
 		val lowercase = Regex(".*[a-z]+.*")
 		val uppercase = Regex(".*[A-Z]+.*")
 		val numbers = Regex(".*[0-9]+.*")
-		val specialchar = Regex(".*[-!@#$%^&*()+]+.*")
+		val specialChar = Regex(".*[-!@#$%^&*()+]+.*")
 
 		var minNumber = 0
 		val lengthDifference = 6 - n
 		if (!(password.matches(numbers))) minNumber++
-		if (!(password.matches(specialchar))) minNumber++
+		if (!(password.matches(specialChar))) minNumber++
 		if (!(password.matches(lowercase))) minNumber++
 		if (!(password.matches(uppercase))) minNumber++
 

@@ -1,5 +1,7 @@
 package com.naufaldystd.hackerrank.implementation.easy
 
+import com.naufaldystd.hackerrank.implementation.easy.AppleAndOrange.countApplesAndOranges
+
 object AppleAndOrange {
 
 	/**
@@ -45,5 +47,5 @@ object AppleAndOrange {
 }
 
 fun main() {
-	AppleAndOrange.countApplesAndOranges(7, 10, 4, 12, arrayOf(2, 3, -4), arrayOf(3, -2, -4))
+	countApplesAndOranges(7, 10, 4, 12, arrayOf(2, 3, -4), arrayOf(3, -2, -4))
 }
