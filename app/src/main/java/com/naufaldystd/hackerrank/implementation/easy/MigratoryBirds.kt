@@ -9,19 +9,22 @@ object MigratoryBirds {
 	@RequiresApi(Build.VERSION_CODES.N)
 	fun migratoryBirds(arr: Array<Int>): Int {
 		val birdType = mutableMapOf<Int, Int>()
-
-		for (i in arr.indices) {
-			if (!birdType.containsKey(arr[i])) birdType[arr[i]] = 1
-			else if (birdType.containsKey(arr[i])) birdType.computeIfPresent(arr[i]) { _, v->v+1 }
+		val keyAndFrequency = arrayOf(0, 0)
+		arr.forEach {
+			birdType.compute(it) { key, value ->
+				val frequency = if (value == null) 1 else value + 1
+				if (frequency > keyAndFrequency[1] || frequency == keyAndFrequency[1] && key < keyAndFrequency[0]) {
+					keyAndFrequency[0] = key
+					keyAndFrequency[1] = frequency
+				}
+				frequency
+			}
 		}
-
-		val highestBirdCount = birdType.maxByOrNull { it.value }
-
-		return highestBirdCount?.key!!
+		return keyAndFrequency[0]
 	}
 }
 
 @RequiresApi(Build.VERSION_CODES.N)
 fun main() {
-	migratoryBirds(arrayOf(1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4))
+	print(migratoryBirds(arrayOf(1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4)))
 }
