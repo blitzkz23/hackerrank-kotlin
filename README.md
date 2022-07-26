@@ -1,5 +1,5 @@
 # Hackerrank - Kotlin
-This repo is my attempt on solving hackerrank's problem solving challenge using kotlin language, unit test included.  
+This repo is my attempt on solving hackerrank's problem solving challenge using kotlin language, unit test included.  Problem that I solved here are categorized based on hackerrank's problem subdomain which include warmup, implementation, strings, etc.
 
 ### Why Do I Use Object?
 Because you can use the function inside without having to instance the object itself, so it makes it easier for testing.
