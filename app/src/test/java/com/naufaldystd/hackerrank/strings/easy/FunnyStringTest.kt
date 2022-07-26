@@ -3,7 +3,6 @@ package com.naufaldystd.hackerrank.strings.easy
 import com.google.common.truth.Truth.assertThat
 import com.naufaldystd.hackerrank.strings.easy.FunnyString.funnyString
 import org.junit.Test
-import org.junit.jupiter.api.Assertions.*
 
 internal class FunnyStringTest {
 	private val expectedResult = "Funny"
