@@ -2,7 +2,13 @@ package com.naufaldystd.hackerrank.sorting.insertion
 
 import com.naufaldystd.hackerrank.sorting.insertion.InsertionSort1.insertionSort1
 
+
 object InsertionSort1 {
+	val sebuahNotes = """
+		This problem is a simple version of insertion notes where, given an array and one unsorted number in the rightmost side, I need to sort it by comparing
+		the unsorted one to the one on left side one by one.  If the current index on the loop is bigger than the unsorted one, switch that one to the right side
+		an so on, until the array is sorted.
+	""".trimIndent()
 
 	fun insertionSort1(n: Int, arr: Array<Int>){
 		//	Store last index array
