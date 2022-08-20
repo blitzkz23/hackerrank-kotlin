@@ -6,6 +6,9 @@ import com.naufaldystd.hackerrank.sorting.insertion.InsertionSort1.insertionSort
 import org.junit.Test
 
 internal class InsertionSort1Test {
+	/**
+	 * This unit test still fail even through the expected output already equal to the actual output idk why
+	 */
 
 	private val expectedResult = """
 		2 3 4 5 6 7 8 9 10 10
