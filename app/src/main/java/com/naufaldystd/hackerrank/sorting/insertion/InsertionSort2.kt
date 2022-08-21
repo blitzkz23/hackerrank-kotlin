@@ -10,11 +10,14 @@ object InsertionSort2 {
 	 */
 
 	fun insertionSort2(n: Int, arr: Array<Int>) {
+		// Loop through the array
 		for (currentIndex in arr.indices) {
+			// Second loop is used to sort the unsorted value with the previous index on the left
 			var j = currentIndex
 			if (j == 0) {
 				continue
 			}
+			// Compare the current index with the previous index until it is the smaller and become sorted
 			while (j > 0 && arr[j] < arr[j - 1]) {
 				val temp = arr[j - 1]
 				arr[j - 1] = arr[j]
